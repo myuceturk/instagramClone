@@ -2,4 +2,6 @@
 
 #### Demo için aşağıdaki linke tıklayınız
 
-### v.1.0
+[Demo](https://myuceturk.github.io/instagramClone/)
+
+- v.1.0
