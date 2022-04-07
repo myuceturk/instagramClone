@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Fontawesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="shortcut icon" href="./img/instagram.ico" type="image/x-icon">
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid nav-comps">
+                            <a class="navbar-brand logo" href="javascript:void(0);">
+                                <img src="./img/logo.png" alt="">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="search">
+                                    <svg aria-label="Ara" class="_8-yf5 " color="#8e8e8e" fill="#8e8e8e" height="16"
+                                        role="img" viewBox="0 0 24 24" width="16">
+                                        <path d="M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z" fill="none"
+                                            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"></path>
+                                        <line fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" x1="16.511" x2="22" y1="16.511"
+                                            y2="22"></line>
+                                    </svg>
+                                    <span class="searchText">Ara</span>
+                                    <input class="form-control search-input" type="search">
+                                </div>
+                                <div class="nav-icons">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <svg aria-label="Ana Sayfa" class="_8-yf5 " color="#262626"
+                                                    fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                                    width="24">
+                                                    <path
+                                                        d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <svg aria-label="Direct" class="_8-yf5 " color="#262626" fill="#262626"
+                                                    height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                    <line fill="none" stroke="currentColor" stroke-linejoin="round"
+                                                        stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                                    <polygon fill="none"
+                                                        points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                                        stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                                                    </polygon>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <svg aria-label="Yeni Gönderi" class="_8-yf5 " color="#262626"
+                                                    fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                                    width="24">
+                                                    <path
+                                                        d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z"
+                                                        fill="none" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"></path>
+                                                    <line fill="none" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455"
+                                                        y1="12.001" y2="12.001"></line>
+                                                    <line fill="none" stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003"
+                                                        y1="6.545" y2="17.455"></line>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <svg aria-label="Kişiler Bul" class="_8-yf5 " color="#262626"
+                                                    fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                                    width="24">
+                                                    <polygon fill="none"
+                                                        points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953"
+                                                        stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"></polygon>
+                                                    <polygon fill-rule="evenodd"
+                                                        points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056">
+                                                    </polygon>
+                                                    <circle cx="12.001" cy="12.005" fill="none" r="10.5"
+                                                        stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"></circle>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <svg aria-label="Hareket Akışı" class="_8-yf5 " color="#262626"
+                                                    fill="#262626" height="24" role="img" viewBox="0 0 24 24"
+                                                    width="24">
+                                                    <path
+                                                        d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="javascript:void(0);">
+                                                <img src="./img/profilepic.jpg" class="profilePic" width="24"
+                                                    height="24" alt="Profile">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <div class="container main-container">
+        <div class="row">
+            <div class="col-md-8">
+                <main class="main">
+                    <!-- Stories -->
+                    <section class="stories">
+                        <div class="userStories-wrapper">
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/1005/65" alt="">
+                                </div>
+                                <span>matthewwiebe</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/1011/65" alt="">
+                                </div>
+                                <span>rnickson</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/1027/65" alt="">
+                                </div>
+                                <span>roksolana</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/1074/65" alt="">
+                                </div>
+                                <span>samuel_scrimshaw</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/22/65" alt="">
+                                </div>
+                                <span>alejandroo</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/338/65" alt="">
+                                </div>
+                                <span>sobczak_offical</span>
+                            </div>
+                            <!-- User Stories -->
+                            <div class="userStories">
+                                <div class="image">
+                                    <img src="https://picsum.photos/id/349/65" alt="">
+                                </div>
+                                <span>calebgeorge</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Posts Wrapper -->
+                    <section class="posts-wrapper">
+                        <!-- Post -->
+                        <article class="post">
+                            <!-- Post Header -->
+                            <div class="post-header">
+                                <div class="pp">
+                                    <img src="./img/profilepic.jpg" alt="">
+                                </div>
+                                <div class="post_info">
+                                    <a href="javascript:void(0);"><span
+                                            class="account_name d-block">myuceturkk</span></a>
+                                    <a href="javascript:void(0);"><span class="place">Turkey</span></a>
+                                </div>
+                                <div class="details">
+                                    <a href="javascript:void(0);">
+                                        <svg aria-label="Diğer seçenekler" class="_8-yf5 " color="#262626"
+                                            fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                            <circle cx="12" cy="12" r="1.5"></circle>
+                                            <circle cx="6" cy="12" r="1.5"></circle>
+                                            <circle cx="18" cy="12" r="1.5"></circle>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Post Img -->
+                            <div class="post-img">
+                                <img src="https://picsum.photos/1000" alt="">
+                            </div>
+
+                            <!-- Post Footer -->
+                            <div class="post-footer">
+                                <!-- Post Process -->
+                                <div class="process">
+                                    <div class="like_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Beğen" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path
+                                                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="comment_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Yorum Yap" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none"
+                                                    stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="message_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Gönderi Paylaş" class="_8-yf5 " color="#262626"
+                                                fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <line fill="none" stroke="currentColor" stroke-linejoin="round"
+                                                    stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                                <polygon fill="none"
+                                                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                                    stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                                                </polygon>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="save_btn float-end">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Kaydet" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"></polygon>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Post Comments -->
+                                <div class="comments">
+                                    <a href="javascript:void(0);" class="commentsText">
+                                        350 yorumun tümünü gör
+                                    </a>
+                                </div>
+
+                                <!-- Post Time -->
+                                <div class="time">
+                                    <span href="javascript:void(0);" class="postTime">
+                                        2 gün önce
+                                    </span>
+                                </div>
+
+                                <!-- Post Comment -->
+                                <div class="post-comment">
+                                    <div class="symbols">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="İfade Simgesi" class="_8-yf5 " color="#262626"
+                                                fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path
+                                                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="commnet-input">
+                                        <textarea placeholder="Yorum ekle..." autocomplete="off"
+                                            autocorrect="off"></textarea>
+                                    </div>
+                                    <div class="share">
+                                        <a href="javascript:void(0);">Paylaş</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <!-- Post end -->
+
+                        <!-- Post -->
+                        <article class="post">
+                            <!-- Post Header -->
+                            <div class="post-header">
+                                <div class="pp stories_ok">
+                                    <img src="https://picsum.photos/id/1011/65" alt="">
+                                </div>
+                                <div class="post_info">
+                                    <a href="javascript:void(0);"><span class="account_name d-block">rnickson</span></a>
+                                </div>
+                                <div class="details">
+                                    <a href="javascript:void(0);">
+                                        <svg aria-label="Diğer seçenekler" class="_8-yf5 " color="#262626"
+                                            fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                            <circle cx="12" cy="12" r="1.5"></circle>
+                                            <circle cx="6" cy="12" r="1.5"></circle>
+                                            <circle cx="18" cy="12" r="1.5"></circle>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Post Img -->
+                            <div class="post-img">
+                                <img src="https://picsum.photos/id/1000/1000" alt="">
+                            </div>
+
+                            <!-- Post Footer -->
+                            <div class="post-footer">
+                                <!-- Post Process -->
+                                <div class="process">
+                                    <div class="like_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Beğen" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path
+                                                    d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="comment_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Yorum Yap" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none"
+                                                    stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="message_btn">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Gönderi Paylaş" class="_8-yf5 " color="#262626"
+                                                fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <line fill="none" stroke="currentColor" stroke-linejoin="round"
+                                                    stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                                                <polygon fill="none"
+                                                    points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                                                    stroke="currentColor" stroke-linejoin="round" stroke-width="2">
+                                                </polygon>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="save_btn float-end">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="Kaydet" class="_8-yf5 " color="#262626" fill="#262626"
+                                                height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2"></polygon>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- Post Comments -->
+                                <div class="comments">
+                                    <a href="javascript:void(0);" class="commentsText">
+                                        350 yorumun tümünü gör
+                                    </a>
+                                </div>
+
+                                <!-- Post Time -->
+                                <div class="time">
+                                    <span href="javascript:void(0);" class="postTime">
+                                        2 gün önce
+                                    </span>
+                                </div>
+
+                                <!-- Post Comment -->
+                                <div class="post-comment">
+                                    <div class="symbols">
+                                        <a href="javascript:void(0);">
+                                            <svg aria-label="İfade Simgesi" class="_8-yf5 " color="#262626"
+                                                fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
+                                                <path
+                                                    d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="commnet-input">
+                                        <textarea placeholder="Yorum ekle..." autocomplete="off"
+                                            autocorrect="off"></textarea>
+                                    </div>
+                                    <div class="share">
+                                        <a href="javascript:void(0);">Paylaş</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <!-- Post end -->
+                    </section>
+                </main>
+            </div>
+            <div class="col-md-4">
+                <aside class="right-side">
+                    <div class="row profile_info">
+                        <div class="col-sm-3 pp">
+                            <img src="./img/profilepic.jpg" alt="">
+                        </div>
+                        <div class="col-sm-6 account_name">
+                            <a href="">myuceturk</a>
+                            <span>Mecit Yücetürk</span>
+                        </div>
+                        <div class="col-sm-3 switch">
+                            <a href="">Geçiş Yap</a>
+                        </div>
+                    </div>
+                    <div class="row suggested mt-4">
+                        <div class="col-sm-6 text-start">
+                            <span class="sHeader">Senin İçin Öneriler</span>
+                        </div>
+
+                        <!-- Suggested Users -->
+                        <div class="col-sm-6 text-end">
+                            <a href="" class="allShow">Tümünü Gör</a>
+                        </div>
+                        <div class="col-sm-12 suggested_profile_info mt-3">
+                            <div class="col-sm-3 pp">
+                                <img src="https://picsum.photos/id/334/65" alt="">
+                            </div>
+                            <div class="col-sm-6 account_name">
+                                <a href="">k.richards</a>
+                                <span>Instagram'da Yeni</span>
+                            </div>
+                            <div class="col-sm-3 switch text-end">
+                                <a href="">Takip et</a>
+                            </div>
+                        </div>
+
+                        <!-- Suggested Users -->
+                        <div class="col-sm-12 suggested_profile_info mt-3">
+                            <div class="col-sm-3 pp">
+                                <img src="https://picsum.photos/id/342/65" alt="">
+                            </div>
+                            <div class="col-sm-6 account_name">
+                                <a href="">stevenlewis</a>
+                                <span>Instagram'da Yeni</span>
+                            </div>
+                            <div class="col-sm-3 switch text-end">
+                                <a href="">Takip et</a>
+                            </div>
+                        </div>
+
+                        <!-- Suggested Users -->
+                        <div class="col-sm-12 suggested_profile_info mt-3">
+                            <div class="col-sm-3 pp">
+                                <img src="https://picsum.photos/id/349/65" alt="">
+                            </div>
+                            <div class="col-sm-6 account_name">
+                                <a href="">calebgeorge</a>
+                                <span>Instagram'da Yeni</span>
+                            </div>
+                            <div class="col-sm-3 switch text-end">
+                                <a href="">Takip et</a>
+                            </div>
+                        </div>
+
+                        <!-- Suggested Users -->
+                        <div class="col-sm-12 suggested_profile_info mt-3">
+                            <div class="col-sm-3 pp">
+                                <img src="https://picsum.photos/id/548/65" alt="">
+                            </div>
+                            <div class="col-sm-6 account_name">
+                                <a href="">joshua_earle</a>
+                                <span>Instagram'da Yeni</span>
+                            </div>
+                            <div class="col-sm-3 switch text-end">
+                                <a href="">Takip et</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row links">
+                        <nav>
+                            <ul>
+                                <li><a href="">Hakkında</a></li>
+                                <li><a href="">Yardım</a></li>
+                                <li><a href="">Basın</a></li>
+                                <li><a href="">API</a></li>
+                                <li><a href="">İş Fırsatları</a></li>
+                                <li><a href="">Gizlilik</a></li>
+                                <li><a href="">Koşullar</a></li>
+                                <li><a href="">Konumlar</a></li>
+                                <li><a href="">Başlıca Hesaplar</a></li>
+                                <li><a href="">Konu Etiketleri</a></li>
+                                <li><a href="">Dil</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row footer">
+                        <span>© 2022 INSTAGRAM FROM META</span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main End -->
+
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
